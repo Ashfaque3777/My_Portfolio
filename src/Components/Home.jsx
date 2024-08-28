@@ -1,7 +1,7 @@
 import { ArrowUp, Github, Linkedin, Instagram } from "lucide-react";
 // import pic from "../assets/pic.png";
 import Fsd from "../assets/FSD2.png";
-// import ResumePdf from "../assets/Resume.pdf";
+import ResumePdf from "../assets/Resume.pdf";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
@@ -46,7 +46,7 @@ export default function Home() {
             type="button"
             className="inline-flex items-center rounded-md bg-black text-yellow-500 text-xl px-3 py-2 text-sm font-semibold hover:text-white hover:bg-yellow-500"
           >
-            {/* <a href={ResumePdf}>Resume</a> */}
+            <a href={ResumePdf}>Resume</a>
             <ArrowUp className="ml-2 h-4 w-4" />
           </button>
         </div>
