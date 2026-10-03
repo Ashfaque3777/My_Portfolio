@@ -1,0 +1,14 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 64 64"
+  width="64"
+  height="64"
+>
+  <!-- Matches --accent (#d7ff3f) and --bg (#08090a) from globals.css. -->
+  <rect width="64" height="64" rx="14" fill="#08090a" />
+  <path
+    d="M18 46 L30 18 L38 18 L50 46 L41 46 L38 38 L29 38 L26 46 Z M31.5 32 L36 32 L33.75 25.5 Z"
+    fill="#d7ff3f"
+    fill-rule="evenodd"
+  />
+</svg>

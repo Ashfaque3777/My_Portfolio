@@ -2,9 +2,56 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="theme-color" content="#08090a" />
+
+    <!--
+      These are the static defaults. src/lib/seo.js overwrites the title,
+      description, canonical, and OG tags on navigation, so a client-side route
+      change still produces the correct shared preview and indexable title.
+      Kept in sync by hand with seo.title / seo.description in src/data/site.js.
+    -->
+    <title>Mohd Ashfaque Ansari — AI &amp; Full-Stack Developer</title>
+    <meta
+      name="description"
+      content="Portfolio of Mohd Ashfaque Ansari — Computer Science &amp; Engineering student building full-stack applications, RAG systems, and agentic AI workflows."
+    />
+
+    <link rel="canonical" href="https://my-portfolio-197786.netlify.app/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Ashfaque Ansari" />
+    <meta
+      property="og:title"
+      content="Mohd Ashfaque Ansari — AI &amp; Full-Stack Developer"
+    />
+    <meta
+      property="og:description"
+      content="Portfolio of Mohd Ashfaque Ansari — Computer Science &amp; Engineering student building full-stack applications, RAG systems, and agentic AI workflows."
+    />
+    <meta property="og:url" content="https://my-portfolio-197786.netlify.app/" />
+    <meta
+      property="og:image"
+      content="https://my-portfolio-197786.netlify.app/og.png"
+    />
+    <meta property="og:image:alt" content="Mohd Ashfaque Ansari — portfolio" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Mohd Ashfaque Ansari — AI &amp; Full-Stack Developer"
+    />
+    <meta
+      name="twitter:description"
+      content="Portfolio of Mohd Ashfaque Ansari — Computer Science &amp; Engineering student building full-stack applications, RAG systems, and agentic AI workflows."
+    />
+    <meta
+      name="twitter:image"
+      content="https://my-portfolio-197786.netlify.app/og.png"
+    />
   </head>
   <body>
     <div id="root"></div>

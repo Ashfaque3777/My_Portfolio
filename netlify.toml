@@ -1,0 +1,37 @@
+# Netlify deployment config. See BUILD.md §27.
+
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# This is a client-side routed SPA, so every path must be rewritten to
+# index.html and resolved by React Router on the client. Without this, a direct
+# visit or a refresh on /projects/rag-based-chatbot returns Netlify's 404 page
+# instead of the app.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Hashed build assets are immutable, and the PDF is content-addressed by Vite.
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# index.html must never be cached, or a deploy would keep serving stale asset
+# references to anyone who had visited before.
+[[headers]]
+  for = "/index.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
