@@ -9,12 +9,12 @@
 export const site = {
   name: "Ashfaque Ansari",
   fullName: "Mohd Ashfaque Ansari",
-  role: "AI × Full-Stack Developer",
+  role: "AI × Data × Full-Stack Developer",
   position:
     "AI & Full-Stack Developer building practical software, intelligent systems, and modern digital products.",
   location: "Lucknow, Uttar Pradesh, India",
   locationShort: "Lucknow, India",
-  availability: "Available for internships / opportunities",
+  availability: "Available for jobs / opportunities",
   availabilityFull:
     "I reply to most serious enquiries within a day or two, usually sooner.",
   responseTime: "Usually within 1–2 days",
@@ -58,7 +58,7 @@ export const socials = [
 ]
 
 export const seo = {
-  title: "Mohd Ashfaque Ansari — AI & Full-Stack Developer",
+  title: "Mohd Ashfaque Ansari — AI/Data & Full-Stack Developer",
   description:
     "Portfolio of Mohd Ashfaque Ansari — Computer Science & Engineering student building full-stack applications, RAG systems, and agentic AI workflows.",
   ogImage: `${site.url}/og.png`,

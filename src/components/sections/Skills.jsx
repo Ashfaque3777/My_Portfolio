@@ -11,7 +11,7 @@ import useReducedMotion from "../../hooks/useReducedMotion"
 /**
  * Technology wall.
  *
- * No percentage bars — a subjective proficiency bar is not a measurement, and
+ * No percentage bars -- a subjective proficiency bar is not a measurement, and
  * a recruiter reads it as noise. Hovering a chip reveals where the technology is
  * actually used; clicking it navigates to /projects?tech=<slug>, which filters
  * the listing. The filter state is the URL, so the two sections stay
@@ -59,7 +59,7 @@ export default function Skills() {
         className="mt-6 max-w-[62ch] text-[16px] leading-relaxed text-[var(--text-muted)]"
       >
         Select any technology to see which projects actually use it. Nothing here
-        carries a self-assessed percentage — a proficiency bar is a claim, and
+        carries a self-assessed percentage -- a proficiency bar is a claim, and
         the projects are better evidence than a number.
       </p>
 

@@ -44,7 +44,7 @@ export const projects = [
     ],
     sections: {
       problem:
-        "Large document sets are unsearchable by keyword alone. A user asking \"what is the refund window?\" needs the answer and the page it came from — not a confident guess. Most RAG demos stop at vector search, which returns plausible-looking passages with no traceability and no fallback when the text layer is missing.",
+        "Large document sets are unsearchable by keyword alone. A user asking \"what is the refund window?\" needs the answer and the page it came from -- not a confident guess. Most RAG demos stop at vector search, which returns plausible-looking passages with no traceability and no fallback when the text layer is missing.",
       approach:
         "Treat retrieval quality as the problem, not generation. Ingestion tries PyMuPDF first and drops to Tesseract OCR only when a page yields too little text, so scanned documents still work. Chunks carry page metadata so citations are always resolvable. Retrieval runs BM25 and dense search in parallel and fuses the results, which recovers the exact-term matches that pure vector search misses. A cross-encoder reranker then reorders the candidates before anything reaches the model.",
       architecture: [
@@ -111,7 +111,7 @@ export const projects = [
       "https://github.com/AFA-interns/Mortgage-Underwriting-System",
     live: null,
     contribution:
-      "Team project. I implemented the Decision Agent only — LangGraph state and schema handling, risk assessment, decision logic, and structured outputs. Document intelligence, financial analysis, and property evaluation were built by other contributors; I did not build those agents.",
+      "Team project. I implemented the Decision Agent only -- LangGraph state and schema handling, risk assessment, decision logic, and structured outputs. Document intelligence, financial analysis, and property evaluation were built by other contributors; I did not build those agents.",
     technologies: [
       "Python",
       "LangGraph",
@@ -156,7 +156,7 @@ export const projects = [
         "LangGraph state and schema handling across the underwriting workflow",
         "Risk assessment carried explicitly in shared state",
         "Decision logic over 4 categories of underwriting input",
-        "Structured outputs for 3 outcomes — Approve, Deny, Suspend",
+        "Structured outputs for 3 outcomes -- Approve, Deny, Suspend",
         "Merged into the shared team repository through a Git workflow",
       ],
       decisions: [
@@ -181,7 +181,7 @@ export const projects = [
     summary:
       "A full-stack storefront covering the whole purchase path, from JWT auth to order management.",
     description:
-      "A full-stack e-commerce application with a React and Vite frontend over a Node.js and Express backend on MySQL. It covers the complete purchase path — authentication, catalogue, cart, checkout, orders, and an admin panel — with role-based authorisation separating customer and administrator capabilities.",
+      "A full-stack e-commerce application with a React and Vite frontend over a Node.js and Express backend on MySQL. It covers the complete purchase path -- authentication, catalogue, cart, checkout, orders, and an admin panel -- with role-based authorisation separating customer and administrator capabilities.",
     image: "ecommerce",
     // Unverified: the current CV lists no repository for this project and the
     // link in the superseded 2024 CV is not carried forward. See BUILD.md §0.5.
@@ -202,7 +202,7 @@ export const projects = [
     ],
     sections: {
       problem:
-        "The aim was to build the full path a real store has to cover rather than a catalogue mockup. That means the unglamorous parts — authorisation, cart state, order persistence, admin operations — have to work, because that is where a storefront actually breaks.",
+        "The aim was to build the full path a real store has to cover rather than a catalogue mockup. That means the unglamorous parts -- authorisation, cart state, order persistence, admin operations -- have to work, because that is where a storefront actually breaks.",
       approach:
         "Model the domain properly first: products, users, orders, and their relationships in MySQL, then expose it as REST APIs from an Express backend, then consume those APIs from a React frontend. Role-based authorisation for the two user roles is enforced on the server, not hidden in the UI, because a hidden admin panel is not an authorisation boundary.",
       architecture: [
@@ -262,7 +262,7 @@ export const projects = [
     summary:
       "The React frontend foundation behind a live technology and services website.",
     description:
-      "A technology and services website built with React and Vite. I developed the frontend foundation — responsive layout, a reusable component set, and animation work — which was adopted as the base code for the company's actual website and carried through to deployment.",
+      "A technology and services website built with React and Vite. I developed the frontend foundation -- responsive layout, a reusable component set, and animation work -- which was adopted as the base code for the company's actual website and carried through to deployment.",
     image: null,
     github: null,
     live: "https://aptinnova.com/",
@@ -330,7 +330,7 @@ export const projects = [
 
   {
     slug: "ai-nexus",
-    title: "AI_Nexus — Open-Source Contribution",
+    title: "AI_Nexus -- Open-Source Contribution",
     category: "AI / RAG",
     year: "2026",
     role: "Open source",
@@ -356,7 +356,7 @@ export const projects = [
     ],
     sections: {
       problem:
-        "A shared RAG codebase needs the unglamorous layers to be right — configuration, PII handling, quota tracking, tests — or every contributor ends up solving them differently and the retrieval behaviour drifts.",
+        "A shared RAG codebase needs the unglamorous layers to be right -- configuration, PII handling, quota tracking, tests -- or every contributor ends up solving them differently and the retrieval behaviour drifts.",
       approach:
         "Contribute at the seams rather than the centre. Taking the pieces that were under-specified for a single owner to own in parallel avoided conflicting with someone else's work while still fixing real gaps.",
       architecture: [

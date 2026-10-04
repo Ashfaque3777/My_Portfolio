@@ -27,7 +27,7 @@ export const currentlyBuilding = [
   {
     id: "rag",
     title: "RAG systems",
-    body: "Pushing retrieval quality further — chunking strategy, fusion, and reranking.",
+    body: "Pushing retrieval quality further -- chunking strategy, fusion, and reranking.",
   },
   {
     id: "agentic",

@@ -16,9 +16,10 @@
     --accent-contrast: #0a0b0c;
     --white: #ffffff;
 
-    --font-sans: "Geist", "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
-    --font-mono: "Geist Mono", "JetBrains Mono", ui-monospace, "SF Mono", Menlo,
-      monospace;
+    --font-sans:
+      "Geist", "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --font-mono:
+      "Geist Mono", "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
 
     --shell: 1440px;
     --gutter: 1.5rem;
@@ -243,22 +244,5 @@
   }
   to {
     transform: translateX(-50%);
-  }
-}
-
-/* Reduced motion: kill smooth scrolling and let the JS hook flatten
-   all GSAP timelines. Both are required — either alone is insufficient. */
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.001ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.001ms !important;
-    scroll-behavior: auto !important;
   }
 }

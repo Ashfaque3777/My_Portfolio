@@ -33,7 +33,7 @@ function HeroVisual() {
           style={{
             background:
               "conic-gradient(from 0deg, transparent 0deg, var(--accent) 60deg, transparent 130deg, transparent 360deg)",
-            animation: "spin 26s linear infinite",
+            animation: "spin 10s linear infinite",
           }}
         />
       </div>

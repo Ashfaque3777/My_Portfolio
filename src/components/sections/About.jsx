@@ -3,7 +3,7 @@ import { site } from "../../data/site"
 
 const FACTS = [
   { label: "Based in", value: site.locationShort },
-  { label: "Education", value: "B.Tech CSE — AI & Data Science" },
+  { label: "Education", value: "B.Tech CSE -- AI & Data Science" },
   { label: "Graduation", value: site.graduation },
   { label: "Focus", value: "AI + Full Stack" },
 ]
@@ -39,7 +39,7 @@ export default function About() {
 
           <p>
             That pattern is why I keep coming back to the layers underneath the
-            interface — retrieval quality, structured state, data integrity. The
+            interface -- retrieval quality, structured state, data integrity. The
             interface is what a user sees; the system is what has to be right.
           </p>
 
